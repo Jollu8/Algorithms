@@ -1,4 +1,4 @@
-# The Algorithms in C++ and Java
+# The Algorithms in C++
 
 
 

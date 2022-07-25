@@ -30,6 +30,16 @@ size_t fibonacci_recursive(size_t n) {
     return fibonacci_sub_function(ns, n);
 }
 
+int short_recursive_fib(int n) {
+    if (x == 0)
+        return 0;
+
+    if (x == 1)
+        return 1;
+
+    return fib(x-1)+fib(x-2);
+}
+
 int main() {
 
     std::cout << fibonacci_recursive(50000u) << std::endl;

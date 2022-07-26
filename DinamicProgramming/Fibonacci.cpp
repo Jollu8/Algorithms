@@ -40,6 +40,15 @@ int short_recursive_fib(int n) {
     return fib(x-1)+fib(x-2);
 }
 
+int trailingZeroes(int n) {
+    int denom = 5, zeroes = 0;
+     while (n >= denom) {
+         zeroes += (n / denom);
+         denom *= 5;
+      }
+     return zeroes;
+}
+
 int main() {
 
     std::cout << fibonacci_recursive(50000u) << std::endl;

@@ -21,29 +21,44 @@ project contains the following algorithms...
 | First in, first out (FIFO)               |
 | Last recently used (LRU)                 |
 
-## Computational geometry
+[//]: # (## Computational geometry)
 
-| Name algorithm                           | Average result | Worse result |
-|:----------------------------------------:|---------------:|:------------:|
-| Bresenham's line                         | -              | -            |
-| Ramer-Douglas-Peucker                    | O(n*log(n))    | O(n^2)       |
-| Scan-line method                         | O(n*log(n))    | O(n*log(n))  |
+[//]: # ()
+[//]: # (| Name algorithm                           | Average result | Worse result |)
 
-## Cryptography
+[//]: # (|:----------------------------------------:|---------------:|:------------:|)
 
-| Name algorithm                           |
-|:----------------------------------------:|
-| Caesar cipher                            |
+[//]: # (| Bresenham's line                         | -              | -            |)
 
-## Data structures
+[//]: # (| Ramer-Douglas-Peucker                    | O&#40;n*log&#40;n&#41;&#41;    | O&#40;n^2&#41;       |)
 
-| Name structure     | Indexation  | Search         | Inserting    | Deleting    | Memory |
-|:------------------:|:-----------:|:--------------:|:------------:|:-----------:|:------:|
-| Binary Heap        | -           | -              | O(log(n))    | O(log(n))   | O(n)   |
-| Binary Tree        | O(log(n))   | O(log(n))      | O(log(n))    | O(log(n))   | O(n)   |
-| LinkedList         | O(n)        | O(n)           | O(1)         | O(1)        | O(n)   |
-| Queue              | -           | -              | O(1)         | O(1)        | O(n)   |
-| Stack              | -           | -              | O(1)         | O(1)        | O(n)   |
+[//]: # (| Scan-line method                         | O&#40;n*log&#40;n&#41;&#41;    | O&#40;n*log&#40;n&#41;&#41;  |)
+
+[//]: # (## Cryptography)
+
+[//]: # ()
+[//]: # (| Name algorithm                           |)
+
+[//]: # (|:----------------------------------------:|)
+
+[//]: # (| Caesar cipher                            |)
+
+[//]: # (## Data structures)
+
+[//]: # ()
+[//]: # (| Name structure     | Indexation  | Search         | Inserting    | Deleting    | Memory |)
+
+[//]: # (|:------------------:|:-----------:|:--------------:|:------------:|:-----------:|:------:|)
+
+[//]: # (| Binary Heap        | -           | -              | O&#40;log&#40;n&#41;&#41;    | O&#40;log&#40;n&#41;&#41;   | O&#40;n&#41;   |)
+
+[//]: # (| Binary Tree        | O&#40;log&#40;n&#41;&#41;   | O&#40;log&#40;n&#41;&#41;      | O&#40;log&#40;n&#41;&#41;    | O&#40;log&#40;n&#41;&#41;   | O&#40;n&#41;   |)
+
+[//]: # (| LinkedList         | O&#40;n&#41;        | O&#40;n&#41;           | O&#40;1&#41;         | O&#40;1&#41;        | O&#40;n&#41;   |)
+
+[//]: # (| Queue              | -           | -              | O&#40;1&#41;         | O&#40;1&#41;        | O&#40;n&#41;   |)
+
+[//]: # (| Stack              | -           | -              | O&#40;1&#41;         | O&#40;1&#41;        | O&#40;n&#41;   |)
 
 ## Dynamic programming
 

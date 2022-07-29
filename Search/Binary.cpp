@@ -13,24 +13,18 @@ using ValType = typename T::value_type;
 template<typename T>
 using SizeType = typename T::size_type;
 
-template<typename T>
-int binary_search_non_recursive(const T &collection, const ValType<T> &value) noexcept {
-    SizeType<T> begin = 0u;
-    SizeType<T> end = collection.size();
-    SizeType<T> middle = end / 2;
-
+template<typename T, template<class> typename Container>
+T binary_none_recursive_search(Container<T> &collection, T value) {
+//    std::sort(collection.begin(), collection.end()); // if collection not sorted
+    std::size_t begin = 0u;
+    std::size_t end = collection.size();
+    std::size_t middle = end / 2;
     while (begin <= end) {
-        if (collection[middle] < value) {
-            begin = middle + 1;
-            middle = (begin + end) / 2;
-        } else if (collection[middle] > value) {
-            end = middle - 1;
-            middle = (begin + end) / 2;
-        } else {
-            return static_cast<int>(middle);
-        }
+        middle = (begin + end) / 2;
+        if (collection[middle] == value) return value;
+        else if (collection[middle] > value) end = middle - 1;
+        else begin = middle + 1;
     }
-
     return -1;
 }
 

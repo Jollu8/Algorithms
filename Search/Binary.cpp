@@ -18,9 +18,8 @@ T binary_none_recursive_search(Container<T> &collection, T value) {
 //    std::sort(collection.begin(), collection.end()); // if collection not sorted
     std::size_t begin = 0u;
     std::size_t end = collection.size();
-    std::size_t middle = end / 2;
     while (begin <= end) {
-        middle = (begin + end) / 2;
+        std::size_t middle = (begin + end) / 2;
         if (collection[middle] == value) return value;
         else if (collection[middle] > value) end = middle - 1;
         else begin = middle + 1;

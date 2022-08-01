@@ -77,6 +77,57 @@ std::forward_list<int> dfs(int start_vertex, const GraphViewType<T> &graph_view)
     return details::dfs_impl<T>(start_vertex, graph_view);
 }
 
+
+
+
+// ============================================================================
+// #include <vector>
+// #include <iostream>
+// #include <algorithm>
+// #include <deque>
+// #include <unordered_map>
+// #include <list>
+
+class GraphDFS {
+    std::unordered_map<int, bool> visited_;
+    std::unordered_map<int, std::list<int>> adj_;
+public:
+    void addEdge(int v, int w) {
+        adj_[v].push_back(w);
+    }
+
+    void DFS(int v) {
+        visited_[v] = true;
+        std::cout << v << " ";
+        std::list<int>::iterator it;
+        for (it = adj_[v].begin(); it != adj_[v].end(); ++it) {
+            if (!visited_[*it]) DFS(*it);
+        }
+    }
+
+};
+
+
+// int main()
+// {
+//     // Create a graph given in the above diagram
+//     GraphDFS g;
+//     g.addEdge(0, 1);
+//     g.addEdge(0, 2);
+//     g.addEdge(1, 2);
+//     g.addEdge(2, 0);
+//     g.addEdge(2, 3);
+//     g.addEdge(3, 3);
+
+//     std::cout << "Following is Depth First Traversal"
+//             " (starting from vertex 2) \n";
+//     g.DFS(2);
+
+//     return 0;
+// }
+// ================================================================================
+
+
 int main() {
     /**          0
     //         / \

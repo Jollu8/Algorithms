@@ -21,27 +21,29 @@ project contains the following algorithms...
 | First in, first out (FIFO)               |
 | Last recently used (LRU)                 |
 
-[//]: # (## Computational geometry)
+## Computational geometry
 
-[//]: # ()
-[//]: # (| Name algorithm                           | Average result | Worse result |)
 
-[//]: # (|:----------------------------------------:|---------------:|:------------:|)
+| Name algorithm                           | Average result | Worse result |
 
-[//]: # (| Bresenham's line                         | -              | -            |)
+|:----------------------------------------:|---------------:|:------------:|
 
-[//]: # (| Ramer-Douglas-Peucker                    | O&#40;n*log&#40;n&#41;&#41;    | O&#40;n^2&#41;       |)
+| Bresenham's line                         | -              | -            |
 
-[//]: # (| Scan-line method                         | O&#40;n*log&#40;n&#41;&#41;    | O&#40;n*log&#40;n&#41;&#41;  |)
+| Ramer-Douglas-Peucker                    | O(n*log(n))    | O(n^2)       |
 
-[//]: # (## Cryptography)
+| Scan-line method                         | O(n*log(n))    | O(n*log(n))  |
 
-[//]: # ()
-[//]: # (| Name algorithm                           |)
+## Cryptography
 
-[//]: # (|:----------------------------------------:|)
 
-[//]: # (| Caesar cipher                            |)
+| Name algorithm                           |
+
+|:----------------------------------------:|
+
+| Caesar cipher                            |
+
+| RSA                                      |
 
 [//]: # (## Data structures)
 

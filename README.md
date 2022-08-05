@@ -29,11 +29,12 @@ project contains the following algorithms...
 
 ## Cryptography
 
-|                 Name algorithm                  |
-|:-----------------------------------------------:|
-| [Caesar cipher](Cryptography/CeasarChiper.cpp)  |
-|           [RSA](Cryptography/RSA.cpp)           |
-| [Diffie-Hellman](Cryptography/DiffieHelman.cpp) |
+|                          Name algorithm                          |
+|:----------------------------------------------------------------:|
+|          [Caesar cipher](Cryptography/CeasarChiper.cpp)          |
+|                   [RSA](Cryptography/RSA.cpp)                    |
+|         [Diffie-Hellman](Cryptography/DiffieHelman.cpp)          |
+| [Data Encryption Standard](Cryptography/DataEncryptStandard.cpp) |
 
 [//]: # (## Data structures)
 

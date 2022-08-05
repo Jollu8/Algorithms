@@ -1,7 +1,5 @@
 # The Algorithms in C++
 
-
-
 These algorithms are the demonstration purposes only. There are
 many algorithms implementations in the C++ standard
 library that are much better for performance reasons. This
@@ -23,44 +21,28 @@ project contains the following algorithms...
 
 ## Computational geometry
 
-
-| Name algorithm                           | Average result | Worse result |
-
+| Name algorithm | Average result | Worse result |
 |:----------------------------------------:|---------------:|:------------:|
-
-| Bresenham's line                         | -              | -            |
-
-| Ramer-Douglas-Peucker                    | O(n*log(n))    | O(n^2)       |
-
-| Scan-line method                         | O(n*log(n))    | O(n*log(n))  |
+| Bresenham's line | - | - |
+| Ramer-Douglas-Peucker | O(n*log(n))    | O(n^2)       |
+| Scan-line method | O(n*log(n))    | O(n*log(n))  |
 
 ## Cryptography
 
+| Name algorithm |
+|:--------------:|
+| Caesar cipher  |
+|     RSA        |
 
-| Name algorithm                           |
+## Data structures
 
-|:----------------------------------------:|
-
-| Caesar cipher                            |
-
-| RSA                                      |
-
-[//]: # (## Data structures)
-
-[//]: # ()
-[//]: # (| Name structure     | Indexation  | Search         | Inserting    | Deleting    | Memory |)
-
-[//]: # (|:------------------:|:-----------:|:--------------:|:------------:|:-----------:|:------:|)
-
-[//]: # (| Binary Heap        | -           | -              | O&#40;log&#40;n&#41;&#41;    | O&#40;log&#40;n&#41;&#41;   | O&#40;n&#41;   |)
-
-[//]: # (| Binary Tree        | O&#40;log&#40;n&#41;&#41;   | O&#40;log&#40;n&#41;&#41;      | O&#40;log&#40;n&#41;&#41;    | O&#40;log&#40;n&#41;&#41;   | O&#40;n&#41;   |)
-
-[//]: # (| LinkedList         | O&#40;n&#41;        | O&#40;n&#41;           | O&#40;1&#41;         | O&#40;1&#41;        | O&#40;n&#41;   |)
-
-[//]: # (| Queue              | -           | -              | O&#40;1&#41;         | O&#40;1&#41;        | O&#40;n&#41;   |)
-
-[//]: # (| Stack              | -           | -              | O&#40;1&#41;         | O&#40;1&#41;        | O&#40;n&#41;   |)
+| Name structure     | Indexation  | Search         | Inserting    | Deleting    | Memory |
+|:------------------:|:-----------:|:--------------:|:------------:|:-----------:|:------:|
+| Binary Heap        | -           | -              | O(log(n))    | O(log(n))   | O(n)   |
+| Binary Tree        | O(log(n))   | O(log(n))      | O(log(n))    | O(log(n))   | O(n)   |
+| LinkedList         | O(n)        | O(n)           | O(1)         | O(1)        | O(n)   |
+| Queue              | -           | -              | O(1)         | O(1)        | O(n)   |
+| Stack              | -           | -              | O(1)         | O(1)        | O(n)   |
 
 ## Dynamic programming
 
@@ -123,13 +105,14 @@ project contains the following algorithms...
 | Stupid sorting    |  Array        | O(n)         | O(n^3)         | O(n^3)       |
 
 ## Others
-| Name algorithm               |
+
+|        Name algorithm        |
 |:----------------------------:|
-| Euclidean algorithm          |
-| Eratosthenes sieve           |
-| Queens puzzle                |
-| Maximum amound of subarrays  |
+|     Euclidean algorithm      |
+|      Eratosthenes sieve      |
+|        Queens puzzle         |
+| Maximum amount of subArrays  |
 | Reversal of the forward list |
-| Tom Sawyer sence             |
+|       Tom Sawyer sense       |
 
 ---

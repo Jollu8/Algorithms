@@ -21,99 +21,108 @@ project contains the following algorithms...
 
 ## Computational geometry
 
-|    Name algorithm     | Average result | Worse result |
-|:---------------------:|---------------:|:------------:|
-|   Bresenham's line    |              - |      -       |
-| Ramer-Douglas-Peucker |    O(n*log(n)) |    O(n^2)    |
-|   Scan-line method    |    O(n*log(n)) | O(n*log(n))  |
+|                            Name algorithm                             | Average result | Worse result |
+|:---------------------------------------------------------------------:|---------------:|:------------:|
+|     [Bresenham's line](ComputationalGeometry/BresenhamsLine.cpp)      |              - |      -       |
+| [Ramer-Douglas-Peucker](ComputationalGeometry/RamerDuglasPeucker.cpp) |    O(n*log(n)) |    O(n^2)    |
+|     [Scan-line method](ComputationalGeometry/ScanLineMethod.cpp)      |    O(n*log(n)) | O(n*log(n))  |
 
 ## Cryptography
 
-| Name algorithm |
-|:--------------:|
-| Caesar cipher  |
-|      RSA       |
-| Diffie-Hellman |
+|                 Name algorithm                  |
+|:-----------------------------------------------:|
+| [Caesar cipher](Cryptography/CeasarChiper.cpp)  |
+|           [RSA](Cryptography/RSA.cpp)           |
+| [Diffie-Hellman](Cryptography/DiffieHelman.cpp) |
 
-## Data structures
+[//]: # (## Data structures)
 
-| Name structure | Indexation |  Search   | Inserting | Deleting  | Memory |
-|:--------------:|:----------:|:---------:|:---------:|:---------:|:------:|
-|  Binary Heap   |     -      |     -     | O(log(n)) | O(log(n)) |  O(n)  |
-|  Binary Tree   | O(log(n))  | O(log(n)) | O(log(n)) | O(log(n)) |  O(n)  |
-|   LinkedList   |    O(n)    |   O(n)    |   O(1)    |   O(1)    |  O(n)  |
-|     Queue      |     -      |     -     |   O(1)    |   O(1)    |  O(n)  |
-|     Stack      |     -      |     -     |   O(1)    |   O(1)    |  O(n)  |
+[//]: # ()
+
+[//]: # (| Name structure | Indexation |  Search   | Inserting | Deleting  | Memory |)
+
+[//]: # (|:--------------:|:----------:|:---------:|:---------:|:---------:|:------:|)
+
+[//]: # (|  Binary Heap   |     -      |     -     | O&#40;log&#40;n&#41;&#41; | O&#40;log&#40;n&#41;&#41; |  O&#40;n&#41;  |)
+
+[//]: # (|  Binary Tree   | O&#40;log&#40;n&#41;&#41;  | O&#40;log&#40;n&#41;&#41; | O&#40;log&#40;n&#41;&#41; | O&#40;log&#40;n&#41;&#41; |  O&#40;n&#41;  |)
+
+[//]: # (|   LinkedList   |    O&#40;n&#41;    |   O&#40;n&#41;    |   O&#40;1&#41;    |   O&#40;1&#41;    |  O&#40;n&#41;  |)
+
+[//]: # (|     Queue      |     -      |     -     |   O&#40;1&#41;    |   O&#40;1&#41;    |  O&#40;n&#41;  |)
+
+[//]: # (|     Stack      |     -      |     -     |   O&#40;1&#41;    |   O&#40;1&#41;    |  O&#40;n&#41;  |)
 
 ## Dynamic programming
 
-|  Name algorithm   |
-|:-----------------:|
-| Exchange of coins |
-|     Fibonacci     |
+|                       Name algorithm                        |
+|:-----------------------------------------------------------:|
+| [Exchange of coins](DinamicProgramming/ExchangeOfCoins.cpp) |
+|        [Fibonacci](DinamicProgramming/Fibonacci.cpp)        |
 
 ## Graphs
 
-|       Name algorithm       |
-|:--------------------------:|
-|  Depth-First Search (DFS)  |
-| Breadth-First Search (BFS) |
+|                Name algorithm                |
+|:--------------------------------------------:|
+|  [Depth-First Search (DFS)](Graphs/DFS.cpp)  |
+| [Breadth-First Search (BFS)](Graphs/BFS.cpp) |
 
 ## Multithreading
 
 |    Name algorithm     |
 |:---------------------:|
-|       Ping Pong       |
-| Producer and consumer |
+|       [Ping Pong](Multithreads/PingPong.cpp)       |
+| [Producer and consumer](Multithreads/ProduceAndConsumer.cpp) |
 
 ## Search
 
-| Name algorithm | Data Structure | Average result | Worse result |
-|:--------------:|:--------------:|:--------------:|:------------:|
-| Binary search  |  Sorted array  |   O(log(n))    |  O(log(n))   |
-| Linear search  |     Array      |      O(n)      |     O(n)     |
+|             Name algorithm              | Data Structure | Average result | Worse result |
+|:---------------------------------------:|:--------------:|:--------------:|:------------:|
+|   [Binary search](Search/Binary.cpp)    |  Sorted array  |   O(log(n))    |  O(log(n))   |
+|    [Linear search](Search/Liner.cpp)    |     Array      |      O(n)      |     O(n)     |
+| [Ternary Searching](Search/Ternary.cpp) |     Array      |      O(n)      |     (On)     |
 
 ## Set operations
 
-|             Name algorithm              |
-|:---------------------------------------:|
-|   Difference between the ordered sets   |
-| Generation of all permutations from set |
-|  Generation of all subsets of the set   |
-|    Intersection of the ordered sets     |
-|  Symmetric difference of ordered sets   |
-|        Union of the ordered sets        |
+|                                    Name algorithm                                     |
+|:-------------------------------------------------------------------------------------:|
+| [Difference between the ordered sets](Sets/DifferenceOrderedSetsInFirstContainer.cpp) |
+|   [ Generation of all permutations from set](Sets/IntersectionOfTheOrderedSet.cpp)    |
+|          [Generation of all subsets of the set](Sets/Gen_OfSubsetOfAll.cpp)           |
+|       [Intersection of the ordered sets](Sets/IntersectionOfTheOrderedSet.cpp)        |
+|        [Symmetric difference of ordered sets](Sets/SymmetricDifferenceSet.cpp)        |
+|              [Union of the ordered sets](Sets/UnionOfTheOrderedSets.cpp)              |
 
 ## SmartPointers
 
-|     Name pointer     |
-|:--------------------:|
-|  Auto smart pointer  |
-| Unique smart pointer |
-| Shared smart pointer |
+|                    Name pointer                    |
+|:--------------------------------------------------:|
+| [Unique smart pointer](SmartPointes/UniquePtr.cpp) |
+| [Shared smart pointer](SmartPointes/SharedPtr.cpp) |
 
 ## Sorting
 
-|  Name algorithm   | Data Structure | Best result | Average result | Worse result |
-|:-----------------:|:--------------:|:-----------:|:--------------:|:------------:|
-|  Bubble sorting   |     Array      |    O(n)     |     O(n^2)     |    O(n^2)    |
-| Counting sorting  |     Array      |    O(n)     |      O(n)      |     O(n)     |
-| Insertion sorting |     Array      |   O(n^2)    |     O(n^2)     |    O(n^2)    |
-|   Merge sorting   |     Array      | O(n*log(n)) |  O(n*log(n))   | O(n*log(n))  |
-|   Quick sorting   |     Array      | O(n*log(n)) |  O(n*log(n))   |    O(n^2)    |
-| Selection sorting |     Array      |    O(n)     |     O(n^2)     |    O(n^2)    |
-|   Shell sorting   |     Array      |   O(n^2)    |     O(n^2)     |    O(n^2)    |
-|  Stupid sorting   |     Array      |    O(n)     |     O(n^3)     |    O(n^3)    |
+|                    Name algorithm                     | Data Structure | Best result | Average result | Worse result |
+|:-----------------------------------------------------:|:--------------:|:-----------:|:--------------:|:------------:|
+|           [Bubble sorting](Sort/Bubble.cpp)           |     Array      |    O(n)     |     O(n^2)     |    O(n^2)    |
+|         [Counting sorting](Sort/Counting.cpp)         |     Array      |    O(n)     |      O(n)      |     O(n)     |
+|        [Insertion sorting](Sort/Insertion.cpp)        |     Array      |   O(n^2)    |     O(n^2)     |    O(n^2)    |
+|           [Merge sorting ](Sort/Merge.cpp)            |     Array      | O(n*log(n)) |  O(n*log(n))   | O(n*log(n))  |
+|            [Quick sorting](Sort/Quick.cpp)            |     Array      | O(n*log(n)) |  O(n*log(n))   |    O(n^2)    |
+|       [Selection sorting ](Sort/Selection.cpp)        |     Array      |    O(n)     |     O(n^2)     |    O(n^2)    |
+|           [Shell sorting  ](Sort/Shell.cpp)           |     Array      |   O(n^2)    |     O(n^2)     |    O(n^2)    |
+|          [Stupid sorting ](Sort/Stupid.cpp)           |     Array      |    O(n)     |     O(n^3)     |    O(n^3)    |
+| [Quick recursive Sorting](Sort/QuicSortRecursive.cpp) |     Array      | O(n*log(n)) |  O(n*log(n))   | O(n*log(n))  |
 
-## Others
+## Differences
 
-|        Name algorithm        |
-|:----------------------------:|
-|     Euclidean algorithm      |
-|      Eratosthenes sieve      |
-|        Queens puzzle         |
-| Maximum amount of subArrays  |
-| Reversal of the forward list |
-|       Tom Sawyer sense       |
+|                            Name algorithm                            |
+|:--------------------------------------------------------------------:|
+|      [Euclidean algorithm](Differences/EuclideanAlgorithm.cpp)       |
+|       [ Eratosthenes sieve](Differences/EratosthenesSieve.cpp)       |
+|            [Queens puzzle](Differences/QueensPuzzle.cpp)             |
+| [Maximum amount of subArrays](Differences/Max amountOfSumArrays.cpp) |
+| [Reversal of the forward list](Differences/ReversAlFoorwardList.cpp) |
+|          [Tom Sawyer sense](Differences/TomSawyerSense.cpp)          |
 
 ---

@@ -121,7 +121,7 @@ project contains the following algorithms...
 |      [Euclidean algorithm](Differences/EuclideanAlgorithm.cpp)       |
 |       [ Eratosthenes sieve](Differences/EratosthenesSieve.cpp)       |
 |            [Queens puzzle](Differences/QueensPuzzle.cpp)             |
-| [Maximum amount of subArrays](Differences/Max amountOfSumArrays.cpp) |
+| [Maximum amount of subArrays](Differences/MaxAmountOfSumArrays.cpp)  |
 | [Reversal of the forward list](Differences/ReversAlFoorwardList.cpp) |
 |          [Tom Sawyer sense](Differences/TomSawyerSense.cpp)          |
 

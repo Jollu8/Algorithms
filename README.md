@@ -35,6 +35,7 @@ project contains the following algorithms...
 |                   [RSA](Cryptography/RSA.cpp)                    |
 |         [Diffie-Hellman](Cryptography/DiffieHelman.cpp)          |
 | [Data Encryption Standard](Cryptography/DataEncryptStandard.cpp) |
+|             [Blow Fish ](Cryptography/BlowFish.cpp)              |
 
 [//]: # (## Data structures)
 

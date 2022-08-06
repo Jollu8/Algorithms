@@ -36,6 +36,7 @@ project contains the following algorithms...
 |         [Diffie-Hellman](Cryptography/DiffieHelman.cpp)          |
 | [Data Encryption Standard](Cryptography/DataEncryptStandard.cpp) |
 |             [Blow Fish ](Cryptography/BlowFish.cpp)              |
+|             [Triple DES](Cryptography/TripleDES.cpp)             |
 
 [//]: # (## Data structures)
 

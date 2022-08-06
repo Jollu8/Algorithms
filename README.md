@@ -38,15 +38,13 @@ project contains the following algorithms...
 |             [Blow Fish ](Cryptography/BlowFish.cpp)              |
 |             [Triple DES](Cryptography/TripleDES.cpp)             |
 
-[//]: # (## Data structures)
+## Data structures
 
-[//]: # ()
 
-[//]: # (| Name structure | Indexation |  Search   | Inserting | Deleting  | Memory |)
-
-[//]: # (|:--------------:|:----------:|:---------:|:---------:|:---------:|:------:|)
-
-[//]: # (|  Binary Heap   |     -      |     -     | O&#40;log&#40;n&#41;&#41; | O&#40;log&#40;n&#41;&#41; |  O&#40;n&#41;  |)
+|                Name structure                | Indexation |  Search  | Inserting | Deleting  | Memory |
+|:--------------------------------------------:|:----------:|:--------:|:---------:|:---------:|:------:|
+| [Binary Heap](DataStructures/BinaryHeap.cpp) |     -      |    -     | O(log(n)) | O(log(n)) |  O(n)  |
+|    [AVL tree](DataStructures/AVLTree.cpp)    |     -      | O(log n) | O(log n)  | O(log n)  |  O(n)  | 
 
 [//]: # (|  Binary Tree   | O&#40;log&#40;n&#41;&#41;  | O&#40;log&#40;n&#41;&#41; | O&#40;log&#40;n&#41;&#41; | O&#40;log&#40;n&#41;&#41; |  O&#40;n&#41;  |)
 
@@ -72,9 +70,9 @@ project contains the following algorithms...
 
 ## Multithreading
 
-|    Name algorithm     |
-|:---------------------:|
-|       [Ping Pong](Multithreads/PingPong.cpp)       |
+|                        Name algorithm                        |
+|:------------------------------------------------------------:|
+|            [Ping Pong](Multithreads/PingPong.cpp)            |
 | [Producer and consumer](Multithreads/ProduceAndConsumer.cpp) |
 
 ## Search

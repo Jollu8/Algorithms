@@ -37,6 +37,7 @@ project contains the following algorithms...
 | [Data Encryption Standard](Cryptography/DataEncryptStandard.cpp) |
 |             [Blow Fish ](Cryptography/BlowFish.cpp)              |
 |             [Triple DES](Cryptography/TripleDES.cpp)             |
+|                   [RC4](Cryptography/RC4.cpp)                    |
 
 ## Data structures
 

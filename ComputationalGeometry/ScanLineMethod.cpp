@@ -22,10 +22,9 @@ struct Point {
     T y = 0;
     PointType type = PointType::START_SEGMENT;
 
-    bool operator<(const Point &other) {
-        return x < other.x;
-    }
 };
+
+
 
 template<typename T>
 struct Segment {
@@ -35,7 +34,9 @@ struct Segment {
 
 template<typename T, typename = typename std::enable_if_t<std::is_arithmetic_v<T>>>
 Segment<T> find_line_segment_covered_largest_number_segments(std::vector<Point<T>> &segmentsPoints) {
-    std::sort(segmentsPoints.begin(), segmentsPoints.end());
+    std::sort(segmentsPoints.begin(), segmentsPoints.end(), [](auto a, auto b) {
+        return a.x > b.x;
+    });
 
     std::size_t accumulate = 0;
     std::size_t maxCountSegment = 0;

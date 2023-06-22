@@ -65,6 +65,17 @@ set_target_properties(Cryptography_CeasarChipper
         CXX_STANDARD 17
         CXX_STANDARD_REQUIRED ON)
 
+add_executable(Cryptography_DataEncryptStandard Cryptography/DataEncryptStandard.cpp)
+set_target_properties(Cryptography_DataEncryptStandard
+        PROPERTIES
+        CXX_STANDARD 17
+        CXX_STANDARD_REQUIRED ON )
+add_executable(Cryptography_DiffieHelman Cryptography/DiffieHelman.cpp)
+set_target_properties(Cryptography_DiffieHelman
+        PROPERTIES
+        CXX_STANDARD 17
+        CXX_STANDARD_REQUIRED ON)
+
 
 
 

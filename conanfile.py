@@ -86,7 +86,7 @@ class DnsLibsConan(ConanFile):
 
 
     def package_info(self):
-        self.cpp_info.name = "libs"
+        self.cpp_info.name = "enjo"
         self.cpp_info.includedirs = ["include"]
         self.cpp_info.libs = [
             "tools",

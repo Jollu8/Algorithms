@@ -7,7 +7,7 @@
 
 #include <fmt/format.h>
 
-namespace libs {
+namespace enjo {
     enum LogLevel {
         LOG_LEVEL_ERROR,
         LOG_LEVEL_WARN,
@@ -78,4 +78,4 @@ namespace libs {
 #define infolog(l, fmt_, ...) (l).log(::ag::LOG_LEVEL_INFO, FMT_STRING("{}: " fmt_), ::fmt::string_view{__func__}, ##__VA_ARGS__)
 #define dbglog(l, fmt_, ...) do { if ((l).is_enabled(::ag::LOG_LEVEL_DEBUG)) (l).log(::ag::LOG_LEVEL_DEBUG, FMT_STRING("{}: " fmt_), ::fmt::string_view{__func__}, ##__VA_ARGS__); } while(0)
 #define tracelog(l, fmt_, ...) do { if ((l).is_enabled(::ag::LOG_LEVEL_TRACE)) (l).log(::ag::LOG_LEVEL_TRACE, FMT_STRING("{}: " fmt_), ::fmt::string_view{__func__}, ##__VA_ARGS__); } while(0)
-} // namespace libs
+} // namespace enjo

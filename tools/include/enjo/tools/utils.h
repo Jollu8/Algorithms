@@ -5,7 +5,7 @@
 #include <string>
 #include <cstdint>
 
-namespace libs::utils {
+namespace enjo::utils {
 
 #ifdef __linux__
 #include <sys/syscall.h>
@@ -46,4 +46,4 @@ namespace libs::utils {
      * @param format Format string in strftime() format, extended by "%f" for microseconds.
      */
     std::string format_localtime(SystemTime time, const char *format = DEFAULT_LOCALTIME_FORMAT);
-} // namespace libs::utils
+} // namespace enjo::utils

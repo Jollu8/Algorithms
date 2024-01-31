@@ -2,7 +2,7 @@
 #include "tools/defs.h"
 #include "tools/utils.h"
 
-namespace libs {
+namespace enjo {
     static constexpr std::string_view ENUM_NAMES[] = {
         "ERROR",
         "WARN",
@@ -64,10 +64,10 @@ namespace libs {
         std::string_view level_str = (level >= 0 && level < ENUM_NAMES_NUMBER) ? ENUM_NAMES[level] : "UNKNOWN";
         SystemTime now = std::chrono::system_clock::now();
         std::string ts = utils::format_localtime(now, TIME_FORMAT);
-        fmt::print(file, "{} {:5} [{}] {}\n", ts, level_str, libs::utils::gettid(), message);
+        fmt::print(file, "{} {:5} [{}] {}\n", ts, level_str, enjo::utils::gettid(), message);
     };
 
     void Logger::LogToFile::operator()(LogLevel level, std::string_view message) {
         log_to_file(m_file, level, message);
     };
-} // namespace libs
+} // namespace enjo

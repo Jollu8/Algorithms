@@ -15,10 +15,6 @@ endif(SANITIZE)
 set(SRCS
         runner.cpp
         logger.cpp
-        include/libs/tools/defs.h
-        include/libs/tools/utils.h
-        ../containers/include/libs/containers/single_linked_list.h
-        ../containers/single_linked_list.cpp
 )
 
 add_library(${PROJECT_NAME} EXCLUDE_FROM_ALL ${SRCS})
@@ -39,7 +35,7 @@ if(NOT TARGET containers)
 endif(NOT TARGET containers)
 
 set_target_properties(${PROJECT_NAME} PROPERTIES POSITION_INDEPENDENT_CODE ON)
-target_include_directories(${PROJECT_NAME} PUBLIC ./include/libs)
+target_include_directories(${PROJECT_NAME} PUBLIC include/enjo)
 target_link_libraries(${PROJECT_NAME} containers fmt::fmt)
 
 if (NOT MSVC)
@@ -72,7 +68,7 @@ target_compile_definitions(${PROJECT_NAME}  PUBLIC FMT_EXCEPTIONS=0)
 #
 add_executable(tmp_test EXCLUDE_FROM_ALL test/tmp_test.cpp)
 #add_executable(cache_benchmark EXCLUDE_FROM_ALL test/cache_benchmark.cpp)
-#add_dependencies(tests listener_standalone)
+#add_dependencies(tests tools)
 #if (NOT MSVC)
 #    target_link_libraries(listener_standalone resolv)
 #endif()

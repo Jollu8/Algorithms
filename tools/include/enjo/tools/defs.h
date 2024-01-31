@@ -11,7 +11,7 @@
 #include <unordered_map>
 #include <unordered_set>
 
-namespace libs {
+namespace enjo {
     template<auto func>
     using Ftor = std::integral_constant<decltype(func), func>;
 

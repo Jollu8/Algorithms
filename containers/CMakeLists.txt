@@ -5,14 +5,14 @@ set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 20)
 
 set(SRCS
-        double_linked_list.cpp
-        single_linked_list.cpp
+        queue.cpp
+        include/enjo/containers/queue.h
 )
 
 add_library(${PROJECT_NAME} STATIC ${SRCS})
-target_include_directories(${PROJECT_NAME} PUBLIC include/libs)
+target_include_directories(${PROJECT_NAME} PUBLIC include/enjo)
 target_compile_definitions(${PROJECT_NAME} PUBLIC)
-target_link_libraries(${PROJECT_NAME} )
+target_link_libraries(${PROJECT_NAME} tools)
 
 # workaround for successful build with spdlog headers
 if (NOT MSVC)

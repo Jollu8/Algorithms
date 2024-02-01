@@ -8,6 +8,7 @@ set(SRCS
         queue.cpp
         include/enjo/containers/queue.h
         include/enjo/containers/prio_queue.h
+        prio_queue.cpp
 )
 
 add_library(${PROJECT_NAME} STATIC ${SRCS})

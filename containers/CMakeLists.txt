@@ -5,9 +5,6 @@ set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 20)
 
 set(SRCS
-        queue.cpp
-        include/enjo/containers/queue.h
-        include/enjo/containers/prio_queue.h
         prio_queue.cpp
 )
 
@@ -34,15 +31,15 @@ if (NOT MSVC)
     target_compile_options(${PROJECT_NAME} PUBLIC -Wno-format-nonliteral) # for fmt's chrono build
     if (CMAKE_C_COMPILER_ID MATCHES ".*Clang")
         target_compile_options(${PROJECT_NAME} PUBLIC -Wno-unknown-warning-option -Wno-deprecated-experimental-coroutine)
-    else()
+    else ()
         target_compile_options(${PROJECT_NAME} PUBLIC -Wno-return-type -Wno-missing-field-initializers -Wno-redundant-move -Wno-array-bounds -Wno-changes-meaning)
-    endif()
+    endif ()
     target_compile_options(${PROJECT_NAME} PRIVATE -fno-exceptions)
-else()
+else ()
     target_compile_options(${PROJECT_NAME} PRIVATE /W3)
     target_compile_options(${PROJECT_NAME} PRIVATE /EHs-c-)
-endif()
-target_compile_definitions(${PROJECT_NAME}  PUBLIC FMT_EXCEPTIONS=0)
+endif ()
+target_compile_definitions(${PROJECT_NAME} PUBLIC FMT_EXCEPTIONS=0)
 
 enable_testing()
 include(${CMAKE_CURRENT_SOURCE_DIR}/../cmake/add_unit_test.cmake)
@@ -50,3 +47,4 @@ link_libraries(containers tools)
 set(TEST_DIR ${CMAKE_CURRENT_SOURCE_DIR}/test)
 
 add_unit_test(test_SLL ${TEST_DIR} . TRUE TRUE)
+add_unit_test(test_prio_queue ${TEST_DIR} . TRUE TRUE)

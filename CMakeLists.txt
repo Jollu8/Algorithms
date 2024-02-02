@@ -6,4 +6,4 @@ endif ()
 project(algorithms CXX)
 add_subdirectory(tools)
 
-#enable_testing()
+enable_testing()

@@ -15,6 +15,7 @@ endif(SANITIZE)
 set(SRCS
         runner.cpp
         logger.cpp
+        include/enjo/tools/error.h
 )
 
 add_library(${PROJECT_NAME} EXCLUDE_FROM_ALL ${SRCS})

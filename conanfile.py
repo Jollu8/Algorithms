@@ -5,7 +5,7 @@ from os.path import join
 import re
 
 
-class DnsLibsConan(ConanFile):
+class AlgorithmsConan(ConanFile):
     name = "algorithms"
     license = "Apache-2.0"
     author = "Jollu Emiluulu"
@@ -31,7 +31,6 @@ class DnsLibsConan(ConanFile):
     def requirements(self):
         self.requires("fmt/10.1.1", transitive_headers=True)
         self.requires("magic_enum/0.9.5", transitive_headers=True)
-        # self.requires("ada/2.7.4", transitive_headers=True)
 
     def build_requirements(self):
         self.test_requires("gtest/1.14.0")
@@ -96,7 +95,6 @@ class DnsLibsConan(ConanFile):
         self.cpp_info.requires = [
             "fmt::fmt",
             "magic_enum::magic_enum",
-            "ada::ada",
         ]
         if self.settings.os == "Windows":
             self.cpp_info.system_libs = ["ws2_32", "iphlpapi", "ntdll"]

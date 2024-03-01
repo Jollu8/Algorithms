@@ -1,15 +1,15 @@
 cmake_minimum_required(VERSION 3.27)
-project(containers)
+project(DS)
 
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 20)
 
 set(SRCS
-        prio_queue.cpp
+        AVL_tree.cpp
+
 )
 
-add_library(${PROJECT_NAME} STATIC ${SRCS}
-        ../DS/include/DS/n_array.h)
+add_library(${PROJECT_NAME} STATIC ${SRCS})
 target_include_directories(${PROJECT_NAME} PUBLIC include/enjo)
 target_compile_definitions(${PROJECT_NAME} PUBLIC)
 target_link_libraries(${PROJECT_NAME} tools)
@@ -44,8 +44,7 @@ target_compile_definitions(${PROJECT_NAME} PUBLIC FMT_EXCEPTIONS=0)
 
 enable_testing()
 include(${CMAKE_CURRENT_SOURCE_DIR}/../cmake/add_unit_test.cmake)
-link_libraries(containers tools)
+link_libraries(DS tools)
 set(TEST_DIR ${CMAKE_CURRENT_SOURCE_DIR}/test)
 
-add_unit_test(test_SLL ${TEST_DIR} . TRUE TRUE)
-add_unit_test(test_prio_queue ${TEST_DIR} . TRUE TRUE)
+add_unit_test(test_binary_heap ${TEST_DIR} . TRUE TRUE)

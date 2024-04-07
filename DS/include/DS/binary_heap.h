@@ -1,6 +1,7 @@
 ///// @Jollu
 // Binary Heap
 
+#pragma once
 #include <cmath>
 #include <iostream>
 
@@ -207,23 +208,3 @@ BinaryHeap<Type>::~BinaryHeap()
     delete[] mElements;
 }
 
-int main()
-{
-    BinaryHeap<int> heap;
-
-    heap.push(1);
-    heap.push(2);
-    heap.push(3);
-    heap.push(4);
-    heap.push(5);
-    heap.push(6);
-
-    heap.pop();
-    heap.pop();
-    heap.pop();
-
-    std::cout << "Heap size: " << heap.getSize() << std::endl;
-    std::cout << "Heap depth: " << heap.getDepth() << std::endl;
-
-    return EXIT_SUCCESS;
-}

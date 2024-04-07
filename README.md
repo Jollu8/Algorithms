@@ -44,8 +44,8 @@ project contains the following algorithms...
 
 |                Name structure                | Indexation |  Search  | Inserting | Deleting  | Memory |
 |:--------------------------------------------:|:----------:|:--------:|:---------:|:---------:|:------:|
-| [Binary Heap](DataStructures/BinaryHeap.cpp) |     -      |    -     | O(log(n)) | O(log(n)) |  O(n)  |
-|    [AVL tree](DataStructures/AVLTree.cpp)    |     -      | O(log n) | O(log n)  | O(log n)  |  O(n)  | 
+| [Binary Heap](DS/BinaryHeap.cpp) |     -      |    -     | O(log(n)) | O(log(n)) |  O(n)  |
+|    [AVL tree](DS/AVLTree.cpp)    |     -      | O(log n) | O(log n)  | O(log n)  |  O(n)  | 
 
 [//]: # (|  Binary Tree   | O&#40;log&#40;n&#41;&#41;  | O&#40;log&#40;n&#41;&#41; | O&#40;log&#40;n&#41;&#41; | O&#40;log&#40;n&#41;&#41; |  O&#40;n&#41;  |)
 

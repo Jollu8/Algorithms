@@ -161,57 +161,57 @@ private:
     TreeNode *m_root;
 };
 
-int main(int argc, char **argv) {
-    AVLTree tree{};
-    tree.insert(5);
-    tree.insert(10);
-    tree.insert(15);
-    tree.insert(20);
-    tree.insert(25);
-    tree.insert(30);
-    tree.insert(35);
-    tree.insert(40);
-
-    {
-        assert(tree.find(5));
-        assert(!tree.find(6));
-        assert(tree.find(10));
-        assert(!tree.find(11));
-        assert(tree.find(15));
-        assert(!tree.find(16));
-        assert(tree.find(20));
-        assert(!tree.find(21));
-        assert(tree.find(25));
-        assert(!tree.find(26));
-        assert(tree.find(30));
-        assert(!tree.find(31));
-        assert(tree.find(35));
-        assert(!tree.find(36));
-        assert(tree.find(40));
-        assert(!tree.find(41));
-    }
-
-    tree.remove(20);
-    tree.remove(25);
-    tree.remove(30);
-
-    {
-        assert(tree.find(5));
-        assert(!tree.find(6));
-        assert(tree.find(10));
-        assert(!tree.find(11));
-        assert(tree.find(15));
-        assert(!tree.find(16));
-        assert(!tree.find(20));
-        assert(!tree.find(21));
-        assert(!tree.find(25));
-        assert(!tree.find(26));
-        assert(!tree.find(30));
-        assert(!tree.find(31));
-        assert(tree.find(35));
-        assert(!tree.find(36));
-        assert(tree.find(40));
-        assert(!tree.find(41));
-    }
-
-}
+// int main(int argc, char **argv) {
+//     AVLTree tree{};
+//     tree.insert(5);
+//     tree.insert(10);
+//     tree.insert(15);
+//     tree.insert(20);
+//     tree.insert(25);
+//     tree.insert(30);
+//     tree.insert(35);
+//     tree.insert(40);
+//
+//     {
+//         assert(tree.find(5));
+//         assert(!tree.find(6));
+//         assert(tree.find(10));
+//         assert(!tree.find(11));
+//         assert(tree.find(15));
+//         assert(!tree.find(16));
+//         assert(tree.find(20));
+//         assert(!tree.find(21));
+//         assert(tree.find(25));
+//         assert(!tree.find(26));
+//         assert(tree.find(30));
+//         assert(!tree.find(31));
+//         assert(tree.find(35));
+//         assert(!tree.find(36));
+//         assert(tree.find(40));
+//         assert(!tree.find(41));
+//     }
+//
+//     tree.remove(20);
+//     tree.remove(25);
+//     tree.remove(30);
+//
+//     {
+//         assert(tree.find(5));
+//         assert(!tree.find(6));
+//         assert(tree.find(10));
+//         assert(!tree.find(11));
+//         assert(tree.find(15));
+//         assert(!tree.find(16));
+//         assert(!tree.find(20));
+//         assert(!tree.find(21));
+//         assert(!tree.find(25));
+//         assert(!tree.find(26));
+//         assert(!tree.find(30));
+//         assert(!tree.find(31));
+//         assert(tree.find(35));
+//         assert(!tree.find(36));
+//         assert(tree.find(40));
+//         assert(!tree.find(41));
+//     }
+//
+// }

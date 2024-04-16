@@ -42,7 +42,7 @@ endif ()
 target_compile_definitions(${PROJECT_NAME} PUBLIC FMT_EXCEPTIONS=0)
 
 enable_testing()
-include(${CMAKE_CURRENT_SOURCE_DIR}/../cmake/add_unit_test.cmake)
+include(../tools/cmake/add_unit_test.cmake)
 link_libraries(containers tools)
 set(TEST_DIR ${CMAKE_CURRENT_SOURCE_DIR}/test)
 

@@ -388,7 +388,7 @@ function(conan_install)
     # Invoke "conan install" with the provided arguments
     set(CONAN_ARGS ${CONAN_ARGS} -of=${CONAN_OUTPUT_FOLDER})
     message(STATUS "CMake-Conan: conan install ${CMAKE_CURRENT_LIST_DIR}/.. ${CONAN_ARGS} ${ARGN}")
-    execute_process(COMMAND ${CONAN_COMMAND} install ${CMAKE_CURRENT_LIST_DIR}/.. ${CONAN_ARGS} ${ARGN} --format=json
+    execute_process(COMMAND ${CONAN_COMMAND} install ../.. ${CONAN_ARGS} ${ARGN} --format=json
             RESULT_VARIABLE return_code
             OUTPUT_VARIABLE conan_stdout
             ERROR_VARIABLE conan_stderr

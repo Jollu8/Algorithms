@@ -7,8 +7,8 @@ project contains the following algorithms...
 
 ## Allocator
 
-|              Name allocator              | Allocation | Free |
-|:----------------------------------------:|:----------:|:----:|
+|              Name allocator               | Allocation | Free |
+|:-----------------------------------------:|:----------:|:----:|
 | [Linear allocator](allocators/Linear.cpp) |    O(1)    |  -   |
 |   [Pool allocator](allocators/Pool.cpp)   |    O(1)    | O(1) |
 
@@ -41,9 +41,8 @@ project contains the following algorithms...
 
 ## Data structures
 
-
-|                Name structure                | Indexation |  Search  | Inserting | Deleting  | Memory |
-|:--------------------------------------------:|:----------:|:--------:|:---------:|:---------:|:------:|
+|          Name structure          | Indexation |  Search  | Inserting | Deleting  | Memory |
+|:--------------------------------:|:----------:|:--------:|:---------:|:---------:|:------:|
 | [Binary Heap](DS/BinaryHeap.cpp) |     -      |    -     | O(log(n)) | O(log(n)) |  O(n)  |
 |    [AVL tree](DS/AVLTree.cpp)    |     -      | O(log n) | O(log n)  | O(log n)  |  O(n)  | 
 
@@ -57,29 +56,29 @@ project contains the following algorithms...
 
 ## Dynamic programming
 
-|                       Name algorithm                        |
-|:-----------------------------------------------------------:|
+|                    Name algorithm                    |
+|:----------------------------------------------------:|
 | [Exchange of coins](problems/dp/ExchangeOfCoins.cpp) |
 |        [Fibonacci](problems/dp/Fibonacci.cpp)        |
 
 ## Graphs
 
-|                Name algorithm                |
-|:--------------------------------------------:|
+|                   Name algorithm                   |
+|:--------------------------------------------------:|
 |  [Depth-First Search (DFS)](theory_graph/DFS.cpp)  |
 | [Breadth-First Search (BFS)](theory_graph/BFS.cpp) |
 
 ## Multithreading
 
-|                        Name algorithm                        |
-|:------------------------------------------------------------:|
+|                     Name algorithm                      |
+|:-------------------------------------------------------:|
 |            [Ping Pong](threads/PingPong.cpp)            |
 | [Producer and consumer](threads/ProduceAndConsumer.cpp) |
 
 ## Search
 
-|             Name algorithm              | Data Structure | Average result | Worse result |
-|:---------------------------------------:|:--------------:|:--------------:|:------------:|
+|             Name algorithm             | Data Structure | Average result | Worse result |
+|:--------------------------------------:|:--------------:|:--------------:|:------------:|
 |   [Binary search](earch/Binary.cpp)    |  Sorted array  |   O(log(n))    |  O(log(n))   |
 |    [Linear search](earch/Liner.cpp)    |     Array      |      O(n)      |     O(n)     |
 | [Ternary Searching](earch/Ternary.cpp) |     Array      |      O(n)      |     (On)     |
@@ -97,8 +96,8 @@ project contains the following algorithms...
 
 ## SmartPointers
 
-|                    Name pointer                    |
-|:--------------------------------------------------:|
+|                     Name pointer                     |
+|:----------------------------------------------------:|
 | [Unique smart pointer](smart_pointers/UniquePtr.cpp) |
 | [Shared smart pointer](smart_pointers/SharedPtr.cpp) |
 

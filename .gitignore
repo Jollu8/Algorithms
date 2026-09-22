@@ -31,5 +31,9 @@
 *.out
 *.app
 /.idea/
-cmake-build-debug/
-cmake-build-release/
+cmake-build-*/
+
+/build/
+/CMakeUserPresets.json
+.DS_Store
+__pycache__/

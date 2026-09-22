@@ -1,6 +1,6 @@
 # Containers
 
-## [Forward list](Containers/ForwardList.cpp)
+## [Forward list](ForwardList.cpp)
 
 - работать с итераторами односвязного списка;
 - вставлять элементы в односвязный список и очищать его;
